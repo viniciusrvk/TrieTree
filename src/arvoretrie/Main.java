@@ -15,7 +15,7 @@ public class Main {
     
     public static void main(String[] args) {
         Trie trie = new Trie();
-        System.out.println("Ola!\ndigite a palavra que deseja inserir.(Para terminar digite 'sair')");
+        System.out.println("Ola!\ndigite a palavra que deseja inserir.(Para terminar digite '-sair' ou -show para listar inseridos.)");
         Scanner in = new Scanner(System.in);
         String entrada = "";
         while(!"sair".equals(entrada)){
@@ -23,10 +23,12 @@ public class Main {
             entrada = in.next();
             if("sair".equals(entrada)){
                 continue;
+            }else if("-show".equalsIgnoreCase(entrada)) {
+            	trie.show();
+            }else {
+            	trie.insertWord(entrada);            
             }
-            trie.insertWord(entrada);            
-        }
-        trie.show();
+        }in.close();
     }
     
 }
