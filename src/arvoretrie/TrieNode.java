@@ -23,7 +23,7 @@ public class TrieNode {
      */
     public TrieNode(String valor) {
         this.valor = valor;
-        ponteiros = new ArrayList();
+        ponteiros = new ArrayList<TrieNode>();
         stop = false;
     }
 

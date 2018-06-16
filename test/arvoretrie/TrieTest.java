@@ -5,7 +5,7 @@
  */
 package arvoretrie;
 
-import org.junit.Before;
+//import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -46,7 +46,6 @@ public class TrieTest {
         Trie instance = new Trie();
         instance.insertWord("teste1");
         instance.insertWord("teste");
-        boolean expResult = false;
         boolean result = instance.remove("aaaa");
         assertTrue(result);
     }
@@ -56,7 +55,6 @@ public class TrieTest {
         Trie instance = new Trie();
         instance.insertWord("kkk");
         instance.insertWord("hahaha");
-        TrieNode resultado = instance.getRaiz().primeiro();
         assertTrue("k".equals(instance.getRaiz().primeiro().getValor()));
     }
     

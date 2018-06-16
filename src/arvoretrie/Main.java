@@ -20,7 +20,7 @@ public class Main {
         String entrada = "";
         while(!"sair".equals(entrada)){
             //System.out.print(">> ");
-            entrada = in.next();
+            entrada = in.nextLine();
             if("sair".equals(entrada)){
                 continue;
             }else if("-show".equalsIgnoreCase(entrada)) {
