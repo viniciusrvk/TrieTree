@@ -1,3 +1,2 @@
 # TrieTree
-teste de escriuta banch
-An Trie tree. Project to LP2 
+A Trie tree. Project to LP2 
